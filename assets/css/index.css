@@ -1,0 +1,201 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  /*
+    2. Remove default margin
+  */
+  * {
+    margin: 0;
+  }
+  
+  /*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+  */
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Space Mono", serif;
+  }
+  
+  /*
+    5. Improve media defaults
+  */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  
+  /*
+    6. Remove built-in form typography styles
+  */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  
+  /*
+    7. Avoid text overflows
+  */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  
+  /*
+    8. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  }
+
+
+  /* start here */
+  .hero{
+    display: flex;
+    justify-content: space-around;
+  }
+
+  h1{
+    display: flex;
+    justify-content: center;
+    color: #bde0fe;
+    font-size: 55px;
+    font-weight: 800;
+    line-height: 25px ;
+    margin-top: 55px;
+    padding-bottom: 34px;
+    
+  }
+
+  h2{
+    color: #ffafcc;
+    font-size: 25px;
+    font-weight: 800;
+    margin-top: 25px;
+  }
+
+  .pcChooseRandom{
+    color:#ffc8dd;
+    background-color: #bde0fe;
+    font-size: 28px;
+    font-weight: 1000;
+    line-height: 18px;
+    padding: 15px 35px;
+    border-radius: 9px;
+    border: 2px solid #ffc8dd;
+    display: block;
+  }
+
+  .pcChooseRandom:focus{
+    background-color: #cdb4db;
+  }
+
+  a{
+    color:#ffc8dd;
+    background-color: #bde0fe;
+    font-size: 28px;
+    font-weight: 1000;
+    line-height: 18px;
+    padding: 15px 35px;
+    border-radius: 9px;
+    border: 2px solid #ffc8dd;
+    margin-top: 25px;
+    text-decoration: none;
+    display: block;
+  }
+
+  a:focus{
+    background-color: #cdb4db;
+  }
+
+  .hero-right{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+  }
+
+  .player-move{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .calculator{
+    display: flex;
+    justify-content: center;
+    gap: 95px;
+  }
+
+  .footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+
+  }
+
+  .winner{
+    color:#ffc8dd;
+    background-color: #bde0fe;
+    font-size: 28px;
+    font-weight: 1000;
+    line-height: 18px;
+    padding: 15px 35px;
+    border-radius: 9px;
+    border: 2px solid #ffc8dd;
+    margin-top: 25px;
+    display: block;
+  }
+
+  @media (width<768px)  {
+    .calculator{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 5px;
+      align-items: center;
+    }
+  
+    .footer{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: 5px;
+  
+    }
+    
+  h1{
+    display: flex;
+    justify-content: center;
+    color: #bde0fe;
+    font-size: 35px;
+    font-weight: 800;
+    line-height: 25px ;
+    margin-top: 55px;
+    padding-bottom: 34px;
+    
+  }
+  .pcChooseRandom{
+    color:#ffc8dd;
+    background-color: #bde0fe;
+    font-size: 28px;
+    font-weight: 1000;
+    line-height: 18px;
+    padding: 15px 35px;
+    border-radius: 9px;
+    border: 2px solid #ffc8dd;
+    display: block;
+   
+  }
+  
+  .hero-right{
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+  }
+  }
